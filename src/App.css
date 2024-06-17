@@ -1,0 +1,49 @@
+:root {
+  --frappe-base: #303446;
+  --frappe-text: #c6d0f5;
+
+  --frappe-red: #e78284;
+  --frappe-overlay0: #737994;
+
+}
+
+main {
+  background-color: var(--frappe-base);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  * {
+    color: #c6d0f5;
+  }
+}
+
+input:invalid {
+  border: 2px solid var(--frappe-red);
+}
+
+input:valid {
+  border: 2px solid var(--frappe-overlay0);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+
+  & > div {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+  }
+
+  & li {
+    list-style: none;
+  }
+
+  & li > label {
+    padding-left: 8px;
+  }
+}
